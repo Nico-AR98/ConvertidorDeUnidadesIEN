@@ -41,16 +41,16 @@ text-align: center;
         border: 3px solid #3a0ca3;
     }
     25% {
-        border: 3.1px solid #480ca8;
+        border: 3px solid #480ca8;
     }
     50% {
-        border: 3.2px solid #560bad;
+        border: 3px solid #560bad;
     }
     75% {
-        border: 3.3px solid #7209b7;
+        border: 3px solid #7209b7;
     }
     100% {
-        border: 3.4px solid #b5179e;
+        border: 3px solid #b5179e;
     }
 }
 
