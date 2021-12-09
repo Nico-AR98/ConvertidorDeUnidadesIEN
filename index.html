@@ -1,0 +1,98 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    <title>Conversor de Unidades de Temperatura</title>
+</head>
+<body>
+    <section id="intro">
+
+    <h1>Acerca de las unidades de temperatura</h1>
+
+    <p>Las unidades con las que se puede medir la temperatura son: </p>
+    <ul>
+        <li>Grados Centígrados o grados Celsius (ºC): El grado Celsius (símbolo °C), históricamente conocido como grado centígrado,1​ es la unidad termométrica cuyo 0 se ubica 0.01 grados por debajo del punto triple del agua y su intensidad calórica equivale a la de kelvin.El grado Celsius pertenece al Sistema Internacional de Unidades, con carácter de unidad accesoria.</li>
+
+        <li>Grados Fahrenheit (ºF): El grado Fahrenheit es una escala de temperatura propuesta por el físico e ingeniero polaco Daniel Gabriel Fahrenheit en 1724. La escala establece como las temperaturas de congelación y ebullición del agua, 32 °F y 212 °F, respectivamente.</li>
+
+        <li>Kelvin (K): Es la unidad de temperatura del Sistema Internacional. El punto de inicio de la escala Kelvin es el cero absoluto correspondiente a -273,15°C (grados Celsius o centígrados) igual a 0°K (grados Kelvin), o bien -459,67°F (grados Fahrenheit) que es la temperatura más baja posible que puede existir.</li>
+
+    </ul>
+    </section>
+
+    <div class="container"> 
+        <div class="row">
+            <div class="col">
+                <img class="image" src="images/Fahrenheit.jpg" class="d-block " alt="fahrenheit">
+                <h5>Daniel Gabriel Fahrenheit </h5>
+                <p>(Gdansk, 24 de mayo de 1686-La Haya, Países Bajos, 16 de septiembre de 1736) fue un físico, ingeniero y soplador de vidrio Polaco de origen alemán,1​ célebre entre otras cosas por haber desarrollado el termómetro de mercurio y la escala Fahrenheit de temperatura.</p>
+            </div>
+            <div class="col">
+                <div><img class="image" src="images/Lord_Kelvin.jpg" class="d-block imgCarrusel " alt="kelvin"></div>
+                <h5>William Thomson, Lord Kelvin </h5>
+                <p>(Reino Unido; Belfast, Irlanda del Norte, 26 de junio de 1824 - Largs, Ayrshire, Escocia, 17 de diciembre de 1907) fue un físico y matemático británico.</p>
+            </div>
+            <div class="col">
+                <img class="image" src="images/andersCelsius.jpg" class="d-block imgCarrusel " alt="celsius">
+                <h5>Anders Celsius </h5>
+                <p>(27 de noviembre de 1701-25 de abril de 1744) fue un físico y astrónomo sueco. Es conocido por idearuna escala de temperatura centígrada, aunque diferente a la que se basa el sistema utilizado en laactualidad, pero que se denomina "Celsius" en su memoria.</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <form id="formulario">
+        <h2>Convertidor de unidades</h2>
+        <div class="container contenedorConversor">
+            <div class="row">
+              <div class="col">
+                <input class="form-control form-control-sm" type="number" name="medida1" id="medida"> 
+                <select class="form-select" name="unidad1" id="unidad1">
+                    <option selected="selected">Seleccione una unidad</option>
+                    <option value="celsius">Celsius (ºC)</option>
+                    <option value="fahrenheit">Fahrenheit(ºF)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+              </div>
+              <div class="col">
+                <button id = "botonConvertir" type="button" class="btn btn-primary btn-lg">Convertir</button>
+              </div>
+              <div class="col">
+                <select class="form-select" name="unidad2" id="unidad2">
+                    <option selected="selected">Seleccione una unidad</option>
+                    <option value="celsius">Celsius(ºC)</option>
+                    <option value="fahrenheit">Fahrenheit(ºF)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Resultado de la conversion:</p>
+                    <h4></h4>
+                    <br>
+                    <button id = "botonBorrar" type="reset" class="btn btn-primary btn-lg">Borrar todo</button>
+                </div>
+            </div>
+          </div>
+
+          
+          
+    </form>
+
+    <script src="conversor.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+<footer>
+    <img id="logo" src="images/NG_logo3.gif" alt="logo">
+    <p>NiGal - Web Development </p>
+    <p>Design by: Alfredo Nicolás Gallardo Gómez</p>
+</footer>
+</html>

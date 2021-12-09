@@ -1,0 +1,89 @@
+body{
+    background-color: #dcdfe5;
+    animation-name: aparecer;
+    animation-duration: 1.2s ;
+}
+
+h1,h2 {
+font-family: 'Open Sans Condensed', sans-serif;
+color: #14213d;
+text-align: center;
+
+}
+
+.contenedorConversor {
+    animation-name: cambiarColorBorde;
+    animation-duration: 3s ;
+    animation-iteration-count: infinite;
+}
+
+/*animacion*/
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes cambiarColorBorde {
+    0%{
+        border: 3px solid #3a0ca3;
+    }
+    25% {
+        border: 3.1px solid #480ca8;
+    }
+    50% {
+        border: 3.2px solid #560bad;
+    }
+    75% {
+        border: 3.3px solid #7209b7;
+    }
+    100% {
+        border: 3.4px solid #b5179e;
+    }
+}
+
+
+.image{
+    width: 200px;
+    height: 320px;
+    padding-bottom: 0.5em;
+}
+
+.container {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.col{
+    text-align: center;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #14213d;
+}
+
+footer{
+    padding-top: 1em;
+    color: white;
+    background-color:#002F48ff;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+}
