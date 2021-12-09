@@ -1,0 +1,1 @@
+Este es un convertidor de unidades de temperatura desarrollado con Javascript, HTML y CSS en el marco de la entrega del trabajo final del curso de Diseño Web del IEN. Datos del estudiante: Alfredo Nicolás Gallardo Gómez DNI 40982433
